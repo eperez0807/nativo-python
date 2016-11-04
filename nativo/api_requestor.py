@@ -205,8 +205,7 @@ class APIRequestor(object):
                 rbody, rcode, rheaders)
         if not (200 <= rcode < 300):
             self.handle_api_error(rbody, rcode, resp, rheaders)
-        elif not resp.get('status', '') == 'success' and not resp.get('status_code', '') == 'success':
-            # HACK: API is broken, mixes up these two fields for some endpoints
-            rcode = resp.get('status_code', 500)
+        elif not resp.get('status', '') == 'success':
+            rcode = resp.get('status_code')
             self.handle_api_error(rbody, rcode, resp, rheaders)
         return resp.get('data')
