@@ -1,0 +1,9 @@
+/.eggs
+/build
+/dist
+/MANIFEST
+/nativo.egg-info
+.python-version
+*.pyc
+*.egg
+*.class
