@@ -9,7 +9,7 @@ payload = {
     "end_date": "2016-11-03T23:00:00Z",
     "breakdown": [entities.CAMPAIGN],
     "metrics": [metrics.CLICKS],
-    "filters" : { entities.CAMPAIGN : [115361] },
+    "filters": {entities.CAMPAIGN: [115361]},
     "resolution": resolutions.DAILY,
     "sort_by": metrics.IMPRESSIONS,
     "sort_order": "desc",

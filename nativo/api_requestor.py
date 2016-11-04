@@ -2,7 +2,7 @@ import calendar
 import datetime
 import platform
 import time
-import warnings
+
 try:
     from urllib.parse import urlsplit, urlunsplit, urlencode
 except ImportError:
@@ -120,11 +120,7 @@ class APIRequestor(object):
         return 'Unknown Error'
 
     def request_raw(self, method, url, params=None, supplied_headers=None):
-        """
-        Mechanism for issuing an API call
-        """
-        from nativo.auth import auth_headers
-
+        """Mechanism for issuing an API call."""
         if self.api_key:
             my_api_key = self.api_key
         else:

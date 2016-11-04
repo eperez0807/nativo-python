@@ -2,9 +2,8 @@ import os
 import sys
 import textwrap
 import warnings
-import email
 
-from nativo import error, util
+from nativo import error
 
 
 # - Requests is the preferred HTTP library

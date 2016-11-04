@@ -2,6 +2,7 @@ import hashlib
 import hmac
 import time
 
+
 def auth_headers(api_key, secret):
     """Return header data needed to authenticate each request."""
     nativo_timestamp = int(time.time())
